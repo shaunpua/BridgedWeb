@@ -32,6 +32,7 @@ button {
 
 .nav-bar-container {
   height: 70px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .nav-bar {
   max-width: 1300px;
@@ -237,4 +238,101 @@ button {
 .footer-socials i {
   margin-left: 15px;
   color: white;
+}
+
+/* signup-page */
+
+.center-box-blank {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 750px;
+  width: 100%;
+}
+
+.signup-container {
+  width: 450px;
+  margin-top: 40px;
+}
+
+.signup-container h1 {
+  color: var(--primaryblue);
+  font-size: 42px;
+}
+
+.signup-container p {
+  color: rgb(36, 36, 36);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form {
+  margin-top: 40px;
+  padding: 0 60px;
+}
+.form input {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1.5px solid rgb(167, 167, 167);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form input:focus {
+  outline: 0;
+  border: 2px solid #777;
+}
+
+.form h6 {
+  margin-top: 30px;
+  font-size: 15px;
+  color: var(--primaryblue);
+}
+
+.form p {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 12px;
+  color: var(--primaryblue);
+}
+
+.form button {
+  width: 100%;
+  margin: 30px 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--primaryblue);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #04018a;
+}
+
+.text-with-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-with-link span {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(49, 49, 49);
+}
+
+.text-with-link a {
+  margin-left: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primaryblue);
 }
