@@ -24,10 +24,28 @@ button {
 
 .container {
   max-width: 1300px;
-  margin: 0px auto;
+  margin: 10px auto;
   overflow: auto;
+  
 }
 
+.container-column{
+  padding: 20px 120px ;
+  max-width: 1300px;
+  margin: 10px auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.FAQ{
+  padding: 20px 120px ;
+  max-width: 1300px;
+  margin: 10px auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
 /*  navbar styles */
 
 .nav-bar-container {
@@ -341,12 +359,17 @@ button {
 .margin-container {
   margin-left: 5%;
 }
+.title-banner{
+  position: relative;
+  display: flex;  
+}
 .centered-left {
   text-align: left;
   position: absolute;
   top: 50%;
-  left: 29%;
+  left: 30%;
   transform: translate(-50%, -50%);
+  color: white;
 }
 .bottom-left {
   text-align: left;
@@ -367,35 +390,9 @@ button {
   color: grey;
   margin-left: 5px;
 }
-/*
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners 
-  color: white;
-  position: relative;
-  overflow: hidden;
-  width: 280px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-*/
 
 .services-container {
-  padding: 30px 50px;
-}
-
-.services-container {
+  padding: 20px 120px ;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -405,18 +402,18 @@ button {
 
 .services-card-container {
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: start;
 }
+
 .service-card {
   margin-right: 30px;
   width: 300px;
-  height: 200px;
+  height: auto;
   position: relative;
+  overflow:hidden;
 }
-
 .service-card img {
   width: 100%;
   height: auto;
@@ -426,6 +423,110 @@ button {
   position: absolute;
   font-size: 1.7rem;
   color: white;
-  bottom: 0px;
+  bottom: 20px;
   left: 20px;
+}
+
+.padded-container-column{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.padded-container-column p{
+  color: grey;
+  font-size:small;
+}
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 40%;
+}
+
+.top-manufacturers-header{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.view-all{
+  padding: 5px 10px;
+  background-color: white;
+  color: var(--primaryblue);
+  font-weight: 600;
+  border-radius: 8px;
+  margin-left: auto;
+  border: 2px solid;
+  border-color: var(--primaryblue);
+}
+
+.view-all:hover {
+  background-color: #fafafa;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.top-manufacturers-list{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+.manufacturer-card {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 200px;
+  padding: 10px 20px;
+  height: auto;
+  border-radius: 25px;
+  border: 1px solid black;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.manufacturer-card h2{
+  padding: 5px
+}
+.manufacturer-card h4{
+  padding: 5px
+}
+.rating {
+  padding:5px
+}
+.Blue-Filled-Button{
+    padding: 9px 15px;
+    background-color: var(--primaryblue);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.black-bar{
+  width: 100%; 
+  height: 1px;
+  border-radius: 1cm;
+  background-color: black;
+}
+
+.FAQs{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  max-width: 100%;
+  padding: 10px 20px;
+  height: auto;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
